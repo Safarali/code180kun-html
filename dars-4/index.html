@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formalarning Davomi</title>
+  </head>
+  <body>
+    <div>
+      <form action="" onsubmit='alert("Malumot junatildi")'>
+        <h1>O'qishga kirish uchun anketa</h1>
+        <div>
+          <label for="first-name">Bu yer ismingiz uchun</label>
+          <input
+            type="text"
+            id="first-name"
+            placeholder="Ismingizni kiriting"
+            name="firstName"
+          />
+        </div>
+        <div>
+          <label for="last-name">Bu yerda sharifingizni kiriting</label>
+          <input
+            type="text"
+            id="last-name"
+            placeholder="Sharifingizni kiriting"
+            name="lastName"
+          />
+        </div>
+        <div>
+          <label for="email">Bu yerda email kiriting</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Emailni kiriting"
+            name="email"
+            required
+          />
+        </div>
+        <div>
+          <label for="location">Shaxringizni tanlang</label>
+          <select name="location" id="location">
+            <option value="andijon">Andijon</option>
+            <option value="buxoro">Buxoro</option>
+            <option value="samarqand">Samarqand</option>
+          </select>
+        </div>
+        <div>
+          <h2>O'qish turini tanlang</h2>
+          <label for="full-time">Kunduzgi</label>
+          <input
+            type="radio"
+            value="kunduzgi"
+            name="oqishTuri"
+            id="full-time"
+          />
+          <label for="part-time">Sirtqi</label>
+          <input type="radio" value="sirtqi" name="oqishTuri" id="part-time" />
+        </div>
+        <div>
+          <h2>Qaysi tillarni bilasiz?</h2>
+          <input
+            type="checkbox"
+            name="languageUzbek"
+            id="uzbek-tili"
+            value="uzbek-lang"
+          />
+          <label for="uzbek-tili">O'zbek tili</label>
+          <input
+            type="checkbox"
+            name="languageEnglish"
+            id="ingliz-tili"
+            value="eng-lang"
+          />
+          <label for="ingliz-tili">Ingliz Tili</label>
+          <input
+            type="checkbox"
+            name="languageRussian"
+            id="rus-tili"
+            value="rus-lang"
+          />
+          <label for="rus-tili">Rus tili</label>
+        </div>
+        <div>
+          <h2>O'zingiz haqingizda so'zlang</h2>
+          <label>O'zingiz haqingizda 1-2 gap etingg</label>
+          <textarea
+            name="aboutMyself"
+            cols="15"
+            rows="5"
+            placeholder="O'zngiz gaqingizda malumot bering"
+          ></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Malumotingizni jo'nating" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
