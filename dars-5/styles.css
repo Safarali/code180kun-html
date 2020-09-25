@@ -1,0 +1,22 @@
+h1 {
+  background-color: red;
+  height: 200px;
+  width: 300px;
+}
+
+p {
+  color: red;
+  background-color: brown;
+  height: 100px;
+  width: 200px;
+}
+
+a {
+  background-color: yellow;
+  height: 1000000px;
+  width: 1000px;
+}
+
+div {
+  font-size: 40px;
+}
